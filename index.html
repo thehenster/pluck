@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="mustache.min.js"></script>
+  <script type="text/javascript" src="pluck.js"></script>
+  <link rel="stylesheet" type="text/css" href="pluck.css">
+</head>
+<body>
+  <div class="header">
+    <a id="next_button" href="#">Next</a>
+  </div>
+  <div class="content"></div>
+
+  <script id="method_template" type="x-tmpl-mustache">
+    <div class="method__title">
+      <div class="method__klass_full_name">{{klass.full_name}}</div>
+      <div>
+        <span class="method__name_prefix">{{method.name_prefix}}</span><span class="method__name">{{method.name}}</span><span class="method__params">{{method.params}}</span>
+      </div>
+    </div>
+    <div class="method__comment">{{{method.comment}}}</div>
+  </script>
+</body>
+</html>

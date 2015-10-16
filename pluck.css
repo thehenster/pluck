@@ -1,0 +1,29 @@
+body {
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+.header {
+  text-align: right;
+  height: 30px;
+}
+
+.method__title {
+  word-wrap: break-word;
+}
+
+.method__klass_full_name {
+  font-weight: lighter;
+}
+
+.method__name {
+  font-weight: bolder;
+}
+
+.method__params {
+  color: gray;
+}
+
+.method__comment pre {
+  font-size: 12px;
+}
